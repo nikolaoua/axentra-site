@@ -1,7 +1,9 @@
 "use client";
 
 import React, { useMemo, useState } from "react";
+import type { ReactNode, MouseEventHandler } from "react";
 import { motion } from "framer-motion";
+import type { LucideIcon } from "lucide-react";
 import {
   ArrowRight,
   BarChart3,
@@ -25,9 +27,17 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Separator } from "@/components/ui/separator";
 
-const cx = (...classes) => classes.filter(Boolean).join(" ");
+// ✅ typed cx (no implicit any)
+const cx = (...classes: Array<string | false | null | undefined>) =>
+  classes.filter((c): c is string => Boolean(c)).join(" ");
 
-const NavLink = ({ href, children, onClick }) => (
+type NavLinkProps = {
+  href: string;
+  children: ReactNode;
+  onClick?: MouseEventHandler<HTMLAnchorElement>;
+};
+
+const NavLink = ({ href, children, onClick }: NavLinkProps) => (
   <a
     href={href}
     onClick={onClick}
@@ -37,7 +47,13 @@ const NavLink = ({ href, children, onClick }) => (
   </a>
 );
 
-const Pill = ({ icon: Icon, title, desc }) => (
+type PillProps = {
+  icon: LucideIcon;
+  title: string;
+  desc: string;
+};
+
+const Pill = ({ icon: Icon, title, desc }: PillProps) => (
   <div className="flex items-start gap-3">
     <div className="mt-0.5 rounded-xl bg-zinc-900 text-white p-2 shadow-sm">
       <Icon className="h-4 w-4" />
@@ -49,7 +65,19 @@ const Pill = ({ icon: Icon, title, desc }) => (
   </div>
 );
 
-const SectionHeading = ({ eyebrow, title, subtitle, align = "left" }) => (
+type SectionHeadingProps = {
+  eyebrow?: string;
+  title: string;
+  subtitle?: string;
+  align?: "left" | "center";
+};
+
+const SectionHeading = ({
+  eyebrow,
+  title,
+  subtitle,
+  align = "left",
+}: SectionHeadingProps) => (
   <div className={cx("space-y-3", align === "center" && "text-center")}>
     {eyebrow ? (
       <div className={cx("flex", align === "center" ? "justify-center" : "justify-start")}>
@@ -62,7 +90,9 @@ const SectionHeading = ({ eyebrow, title, subtitle, align = "left" }) => (
       {title}
     </h2>
     {subtitle ? (
-      <p className={cx("text-zinc-600", align === "center" ? "mx-auto max-w-2xl" : "max-w-2xl")}>{subtitle}</p>
+      <p className={cx("text-zinc-600", align === "center" ? "mx-auto max-w-2xl" : "max-w-2xl")}>
+        {subtitle}
+      </p>
     ) : null}
   </div>
 );
