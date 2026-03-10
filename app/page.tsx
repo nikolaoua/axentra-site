@@ -218,14 +218,12 @@ export default function AxentraSite() {
               </div>
 
               <h1 className="text-4xl md:text-5xl font-semibold tracking-tight leading-[1.05]">
-                Axentra: Reporting για εταιρείες
+                Axentra:  εταιρείες
                 <span className="text-zinc-500"> με αυτοματισμούς</span>
               </h1>
 
               <p className="text-zinc-600 text-lg leading-relaxed max-w-xl">
-                Στήνουμε βάσεις δεδομένων, ενοποιούμε πηγές, συγχρονίζουμε τεχνολογικά συστήματα και —
-                το σημαντικότερο — αυτοματοποιούμε διαδικασίες ώστε η διοίκηση να βλέπει καθαρά,
-                γρήγορα και με ασφάλεια.
+                Από την ανάλυση των αναγκών μέχρι την υλοποίηση, βοηθάμε τις εταιρίες να μετατρέψουν την τεχνητή νοημοσύνη σε πραγματικό επιχειρηματικό πλεονέκτημα
               </p>
 
               <div className="flex flex-col sm:flex-row gap-3">
