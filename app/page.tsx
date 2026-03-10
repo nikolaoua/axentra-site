@@ -145,9 +145,7 @@ export default function AxentraSite() {
             </nav>
 
             <div className="hidden md:flex items-center gap-2">
-              <Button asChild variant="ghost" className="rounded-2xl">
-                <a href="#contact">Μίλησε μαζί μας</a>
-              </Button>
+              
               <Button asChild className="rounded-2xl">
                 <a href="#contact">
                   Ζήτησε demo <ArrowRight className="ml-2 h-4 w-4" />
