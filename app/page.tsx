@@ -106,7 +106,7 @@ export default function AxentraSite() {
       { id: "solutions", label: "Λύσεις" },
       { id: "how", label: "Πώς δουλεύουμε" },
       { id: "tech", label: "Τεχνολογία" }
-      
+      { id: "faq", label: "FAQ" }
       
     ],
     []
