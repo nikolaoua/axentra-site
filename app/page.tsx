@@ -215,8 +215,8 @@ export default function AxentraSite() {
                 </Badge>
               </div>
 
-              <h1>
-                <span className="text-zinc-500"> Έξυπνες λύσεις για εταιρείες που κοιτάνε στο μέλλον. </span>
+              <h1 className="text-zinc-500">
+                Έξυπνες λύσεις για εταιρείες που κοιτάνε στο μέλλον. </span>
               </h1>
 
               <p className="text-zinc-600 text-lg leading-relaxed max-w-xl">
