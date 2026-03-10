@@ -218,8 +218,8 @@ export default function AxentraSite() {
               </div>
 
               <h1 className="text-4xl md:text-5xl font-semibold tracking-tight leading-[1.05]">
-                Axentra:  εταιρείες
-                <span className="text-zinc-500"> με αυτοματισμούς</span>
+                Axentra:  
+                <span className="text-zinc-500"> Έξυπνες λυσεις για εταιρείες που κοιτανε το μέλλον </span>
               </h1>
 
               <p className="text-zinc-600 text-lg leading-relaxed max-w-xl">
