@@ -215,7 +215,7 @@ export default function AxentraSite() {
                 </Badge>
               </div>
 
-              <h1 className="max-w-3xl text-3xl font-semibold leading-tight tracking-tight text-zinc-800 md:text-4xl">
+              <h1 className="max-w-3xl text-3xl font-bold leading-tight tracking-tight text-zinc-800 md:text-4xl">
                 Έξυπνες λύσεις για εταιρείες που κοιτάνε στο μέλλον.
               </h1>
 
