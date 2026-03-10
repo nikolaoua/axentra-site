@@ -105,9 +105,9 @@ export default function AxentraSite() {
       { id: "services", label: "Υπηρεσίες" },
       { id: "solutions", label: "Λύσεις" },
       { id: "how", label: "Πώς δουλεύουμε" },
-      { id: "tech", label: "Τεχνολογία" },
-      { id: "faq", label: "FAQ" },
-      { id: "contact", label: "Επικοινωνία" },
+      { id: "tech", label: "Τεχνολογία" }
+      
+      
     ],
     []
   );
@@ -217,9 +217,8 @@ export default function AxentraSite() {
                 </Badge>
               </div>
 
-              <h1 className="text-4xl md:text-5xl font-semibold tracking-tight leading-[1.05]">
-                Axentra:  
-                <span className="text-zinc-500"> Έξυπνες λυσεις για εταιρείες που κοιτανε το μέλλον </span>
+              <h1>
+                <span className="text-zinc-500"> Έξυπνες λύσεις για εταιρείες που κοιτάνε στο μέλλον. </span>
               </h1>
 
               <p className="text-zinc-600 text-lg leading-relaxed max-w-xl">
